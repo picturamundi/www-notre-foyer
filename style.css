@@ -1,19 +1,35 @@
 @charset "UTF-8";
 
+:root {
+    --bg: rgb(30,35,40);
+}
+
+body {
+    margin: 0px;
+    background-image: url('assets/chester-top.jpg');
+    background-size: 20%;
+}
+
 #home-banner {
     position: absolute;
-    display: block;
-    opacity: 0.5;
+    height: 300px;
+    width: 800px;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -400px;
+    background-color: var(--bg);
+    border: 5px solid lightgreen;
+    border-radius: 15px;
+}
+
+#banner-text {
+    font-size: 30px;
     font-family: 'Helvetica', monospace;
     font-weight: 100;
     text-align: center;
-    height: 200px;
-    width: 600px;
-    top: 50%;
-    margin-top: -100px;
-    left: 50%;
-    margin-left: -300px;
-    font-size: 30px;
+    margin-top: 90px;
+    color: white;
 }
 
 .label {
@@ -21,4 +37,5 @@
     background-color: lightgreen;
     padding: 5px;
     border-radius: 7px;
+    color: var(--bg);
 }
