@@ -467,7 +467,7 @@
                     'from { width:' + Trex.config.WIDTH + 'px }' +
                     'to { width: ' + this.dimensions.WIDTH + 'px }' +
                     '}';
-                
+
                 // create a style sheet to put the keyframe rule in 
                 // and then place the style sheet in the html head    
                 var sheet = document.createElement('style');
