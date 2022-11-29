@@ -8,6 +8,29 @@
   transition: filter 3s;
 }
 
+#message {
+  transition: visibility 1s;
+  text-align: left;
+  font-family: Courier, monospace;
+  margin-top: 100px;
+  color: rgb(95, 94, 104);
+}
+
+#message h2 {
+  color: rgb(40, 40, 40);
+}
+
+
+/* .runner-container {
+  border-radius: 7px;
+  box-shadow: rgba(110, 91, 71, 0.5) 2px 2px 2px;
+} */
+
+/* canvas {
+  background-color: rgb(255, 254, 248);
+  box-sizing: border-box;
+} */
+
 
 /* Copyright 2013 The Chromium Authors. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be
