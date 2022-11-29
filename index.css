@@ -1,11 +1,11 @@
 /* night / day cycle */
 
 #t {
-  transition: background 3s;
+  transition: background 2.5s;
 }
 
 #main-frame-error {
-  transition: filter 3s;
+  transition: filter 2.5s;
 }
 
 html,
