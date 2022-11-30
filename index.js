@@ -485,6 +485,7 @@
                 // }
                 this.playing = true;
                 this.activated = true;
+                document.getElementById("chester-wrapper").style.opacity = "0";
             } else if (this.crashed) {
                 this.restart();
             }

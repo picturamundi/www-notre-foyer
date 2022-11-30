@@ -17,16 +17,21 @@
 }
 
 #dishes {
+  opacity: 0.3;
   position: absolute;
   bottom: 0px;
   width: calc(100% + 30px);
   height: 100px;
   margin-left: -30px;
+  overflow: hidden;
+}
+
+#dishes,
+#dishes div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  opacity: 0;
-  overflow: hidden;
+  flex-grow: 3;
 }
 
 #dishes div img {
@@ -34,6 +39,166 @@
   bottom: 0px;
   image-rendering: pixelated;
 }
+
+.w18 {
+  width: 33px;
+}
+
+.w25 {
+  width: 50px;
+}
+
+.w50 {
+  width: 100px;
+}
+
+.w75 {
+  width: 150px;
+}
+
+@media (max-width: 650px) or (max-height: 650px) {
+  #chester #chester-img {
+    width: 46px;
+  }
+
+  .w18 {
+    width: 26px;
+  }
+
+  .w25 {
+    width: 38px;
+  }
+
+  .w50 {
+    width: 75px;
+  }
+
+  .w75 {
+    width: 113px;
+  }
+}
+
+@media (max-width: 450px) or (max-height: 450px) {
+  /* #chester img {
+    width: 23px;
+  } */
+
+  .w18 {
+    width: 18px;
+  }
+
+  .w25 {
+    width: 25px;
+  }
+
+  .w50 {
+    width: 50px;
+  }
+
+  .w75 {
+    width: 75px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  #dishes .large-dishes {
+    display: none;
+  }
+}
+
+@media (max-width: 275px) {
+  #dishes .medium-dishes {
+    display: none;
+  }
+}
+
+@media (max-height: 500px) {
+  #message {
+    display: none;
+  }
+}
+
+#chester-wrapper {
+  transition: opacity 2s;
+}
+
+#chester {
+  animation: chester-appear 30s linear infinite;
+}
+
+#chester img {
+  position: absolute;
+  filter: blur(1.5px);
+  z-index: -1;
+  bottom: 115px;
+  width: 69px;
+  image-rendering: pixelated;
+  opacity: 0.3;
+  animation-name: chester-fly;
+  animation: chester-fly 30s linear infinite;
+}
+
+@keyframes chester-appear {
+  0% {
+    opacity: 0
+  }
+
+  7% {
+    opacity: 0
+  }
+
+  15% {
+    opacity: 1
+  }
+
+  30% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 0
+  }
+
+  48% {
+    opacity: 1
+  }
+
+  55% {
+    opacity: 1
+  }
+
+  90% {
+    opacity: 0
+  }
+}
+
+@keyframes chester-fly {
+  0% {
+    left: calc(100% - 69px);
+    transform: scaleX(1);
+  }
+
+  49% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    left: 0px;
+    transform: scaleX(-1);
+  }
+
+  99% {
+    transform: scaleX(-1);
+  }
+
+  100% {
+    left: calc(100% - 69px);
+    transform: scaleX(1);
+  }
+}
+
+
 
 /* night / day cycle */
 
@@ -48,6 +213,8 @@
 #dishes {
   transition: filter 2.5s;
 }
+
+
 
 html,
 body {
