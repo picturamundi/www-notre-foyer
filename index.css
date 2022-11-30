@@ -203,15 +203,15 @@
 /* night / day cycle */
 
 #t {
-  transition: background 2.5s;
+  transition: background 1s;
 }
 
 #main-frame-error {
-  transition: filter 2.5s;
+  transition: filter 1s;
 }
 
 #dishes {
-  transition: filter 2.5s;
+  transition: filter 1s;
 }
 
 
