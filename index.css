@@ -168,7 +168,11 @@
     opacity: 1
   }
 
-  90% {
+  95% {
+    opacity: 0
+  }
+
+  100% {
     opacity: 0
   }
 }
