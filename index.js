@@ -458,12 +458,6 @@
          * Canvas container width expands out to the full width.
          */
 
-        // delete chester on game start
-        chesterNone: function () {
-            setTimeout(function () { }, 2000);
-            document.getElementById("chester-wrapper").style.display = "none";
-        },
-
         playIntro: function () {
             if (!this.activated && !this.crashed) {
                 this.playingIntro = true;
@@ -492,8 +486,11 @@
                 // }
                 this.playing = true;
                 this.activated = true;
-                // fade chester out on game start
+                // fade chester out on game start, then delete
                 document.getElementById("chester-wrapper").style.opacity = "0";
+                setTimeout(function () {
+                    document.getElementById("chester-wrapper").style.display = "none";
+                }, 2000);
                 this.chesterNone;
             } else if (this.crashed) {
                 this.restart();
